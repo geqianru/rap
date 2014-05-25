@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor,graphicx}
+
+
+
+\newlength{\defbaselineskip}
+\setlength{\defbaselineskip}{\baselineskip}
+\newcommand{\setlinespacing}[1]%
+           {\setlength{\baselineskip}{#1 \defbaselineskip}}
+\newcommand{\doublespacing}{\setlength{\baselineskip}%
+                           {2.0 \defbaselineskip}}
+                           \newcommand{\onehalfspacing}{\setlength{\baselineskip}%
+                           {1.5 \defbaselineskip}}
+\newcommand{\singlespacing}{\setlength{\baselineskip}{\defbaselineskip}}
+
+
+ \newtheorem{theorem}{Theorem}
+
+\renewenvironment{proof}
+  {\noindent\textbf{\textit{Proof.}~}\onehalfspacing}
+  {\marginpar{$\Box$}}
+
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+\begin{document}
+\begin{eqnarray}
+ y_1=C_r*T*((1-x_1)*mu_10+x_1*mu_11+(1-x_2)*mu_20+x_2*mu_21) \\
+ ii= 1./(factorial(n).*sqrt((sigma_1.^2+sigma_2.^2).*2.*pi)).*(lambda.*T).^n.\\*exp(-lambda.*T).*exp((-(lambda-mu_1-mu_2).^2)./(2.*(sigma_1.^2+sigma_2.^2)))
+\end{eqnarray}
+
+\end{document}
