@@ -16,16 +16,16 @@ clear;
 % % i=i+1;
 % % end
 % % R3(i)=pr(t(i));
-
-j=1;
-s(j)=0;
-while(s(j)<50)
-R3(j)=inte(s(j));
-s(j+1)=s(j)+1;
-j=j+1; 
-end
-R3(j)=inte(s(j));
-plot(s,R3)
+% 
+% j=1;
+% s(j)=0;
+% while(s(j)<50)
+% R3(j)=inte(s(j));
+% s(j+1)=s(j)+1;
+% j=j+1; 
+% end
+% R3(j)=inte(s(j));
+% plot(s,R3)
 
 % j=1;
 % s(j)=1;
